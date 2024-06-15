@@ -1,5 +1,7 @@
-function love.conf(t)
+ function love.conf(t)
     t.window.title = "This is the name of your app"
-    t.window.width = 1280
-    t.window.height = 720
+    t.window.width = 600
+    t.window.height = 400
+
+    t.console = true
 end
