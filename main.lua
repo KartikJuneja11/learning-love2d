@@ -1,5 +1,5 @@
 function love.draw()
-    love.graphics.print("hello World", 100, 100)
+    love.graphics.print("Hello World", 100, 100)
 end
 
 function love.update(dt)
