@@ -3,5 +3,5 @@
     t.window.width = 600
     t.window.height = 400
 
-    t.console = true
+    t.window.icon = "funny.jpeg"
 end

@@ -3,11 +3,12 @@ function love.draw()
 end
 
 function love.update(dt)
-    print("update!!!!!")
+    
 end
 
 function love.load()
-    print("Some message to display on load")
+    local newIcon = love.image.newImageData("funny.jpeg")
+    love.window.setIcon(newIcon)
 end
 
 function love.quit()
