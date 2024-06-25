@@ -14,14 +14,22 @@ function love.draw()
         {currentX + 0, 100, currentX + 200, 100, 
         currentX + 200, 300, currentX + 0, 300}
     )
+
+    -- Keyboard input to update position manually
+    if love.keyboard.isDown("right") then
+        currentX = currentX + 2
+    end
+    if (currentX > width) then
+        currentX = -200
+    end
 end
 
 function love.update(dt)
-    if (currentX < width) then
-        currentX = currentX + 100 * dt
-    else
-        currentX = -200
-    end
+    -- if (currentX < width) then
+    --     currentX = currentX + 100 * dt
+    -- else
+    --     currentX = -200
+    -- end
 end
 
 function love.load()
